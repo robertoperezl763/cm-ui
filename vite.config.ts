@@ -7,12 +7,12 @@ import dts from 'vite-plugin-dts';
 import { libInjectCss } from 'vite-plugin-lib-inject-css';
 
 
-
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     react(),
-    dts({ rollupTypes: true}),  
+    dts({
+      tsconfigPath: './tsconfig.app.json',
+    }),
     libInjectCss(),
   ],
   build: {
