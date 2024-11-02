@@ -1,3 +1,68 @@
 .button
-    background-color: #0000ff
-    color: #fff
+    display: flex
+    align-items: center
+    justify-content: center
+    appearance: none
+    border: none
+    margin: 0
+    padding: 0
+    background: var(--cm-ui-button-bgColor, #E33F7A)
+    color: var(--cm-ui-button-color, #FFFFFF)
+    font-size: var(--cm-ui-button-fontSize, 1rem)
+    font-weight: var(--cm-ui-button-fontWeight, 700)
+    border-radius: var(--cm-ui-button-radius, 0.714rem)
+    transition: 0.2s background-color
+    cursor: pointer
+    overflow: hidden
+    
+
+
+    &:hover
+        background-color: var(--cm-ui-button-bgHoverColor, #BF1E58)
+
+    &:active
+        background-color: var(--cm-ui-button-bgColor, #E33F7A)
+
+    &:focus
+        outline: 3px solid var(--cm-ui-button-focusOutlineColor, rgba(227, 63, 122, 0.3))
+
+    &--link
+        background-color: transparent
+        color: var(--cm-ui-button-linkColor, #E33F7A)
+        border-radius: 0
+        gap: 5px
+        overflow: visible
+
+        .button__content,
+        .button__icon
+            background-color: transparent
+            padding: 0
+
+        .button__icon
+            svg
+                width: 0.75em
+                height: 0.75em
+
+        &:hover,
+        &:focus
+            background-color: transparent
+            color: var(--cm-ui-button-linkHoverColor, #E33F7A)
+            outline: none
+
+        &:active
+            background-color: transparent
+            color: var(--cm-ui-button-linkColor, #E33F7A)
+
+
+.button__content,
+.button__icon
+    padding: 0.714rem 0.714rem
+    display: flex
+    align-items: center
+
+.button__icon
+    background-color: rgba(0,0,0, 0.1)
+    
+    svg
+        display: block
+

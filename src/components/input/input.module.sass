@@ -1,0 +1,52 @@
+.input
+    padding: 1rem
+    font-size: 1rem
+    font-weight: 500
+    line-height: 1
+    color: var(--cm-ui-input-color, #000000 )
+    border: 1px solid var(--cm-ui-input-border, #EAE7E7)
+    border-radius: 10px
+    background-color: var(--cm-ui-input-bgColor, #EAE7E7)
+    appearance: none
+    min-width: 24rem
+    margin: none
+    
+    &::placeholder
+        color: var(--cm-ui-input-phColor, #3A3034 )
+        
+    &:focus
+        outline:2px solid var(--cm-ui-input-focusOutlineColor, #8A7B81)
+
+    &[type='search']
+        padding-left: 3rem
+
+.input__wrapper
+    position: relative
+    svg
+        width: 1rem
+        height: 1rem
+        position: absolute
+        top: 50%
+        left: 1rem
+        transform: translateY(-50%)
+        fill: var(--cm-ui-input-phColor, #3A3034 )
+        transition: 0.2s fill
+
+
+
+.checkbox,
+.radio
+    accent-color: var(--cm-ui-checkbox-accent, #E33F7A)
+    width: 1.285rem
+    height: 1.285rem
+    margin: none
+
+// .file
+//     border: 1px solid #ccc
+//     display: inline-block
+//     padding: 6px 12px
+//     cursor: pointer
+
+
+    
+
