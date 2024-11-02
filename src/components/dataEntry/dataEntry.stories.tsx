@@ -40,7 +40,7 @@ export const CollectionsEntry: Story = {
         </Columns>
 
         <Columns>
-          <UploadImage />
+          <UploadImage isReq={true}/>
         </Columns>
         
       </Rows>
@@ -103,7 +103,7 @@ export const ItemEntry: Story = {
         </Columns>
         
         <Columns>
-          <UploadImage />
+          <UploadImage isReq={true}/>
         </Columns>
       </Rows>
 

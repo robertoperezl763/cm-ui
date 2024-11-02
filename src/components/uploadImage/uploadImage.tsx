@@ -3,7 +3,11 @@ import styles from './uploadImage.module.sass';
 import { Icon,IconTypes } from '../icon/icon';
 import { useRef, useState } from 'react';
 
-export const UploadImage = (props: {isReq: boolean}) => {
+export type dataEntryprops = Readonly<{
+    isReq: boolean
+}>;
+
+export const UploadImage = (props: dataEntryprops) => {
     const [selectedImage, setSelectedImage] = useState<string>();
     const fileInput: React.MutableRefObject<HTMLInputElement | null> = useRef(null)
     //  createRef<HTMLInputElement>();
