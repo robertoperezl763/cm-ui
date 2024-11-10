@@ -1,3 +1,4 @@
+'use-client';
 import { useEffect, useRef, useState } from 'react';
 import styles from './dialog.module.sass';
 import { Button } from '../button/button';
