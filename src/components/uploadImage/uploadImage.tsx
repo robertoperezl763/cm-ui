@@ -5,6 +5,7 @@ import { useRef, useState } from 'react';
 
 export type dataEntryprops = Readonly<{
     isReq: boolean
+    id: string,
 }>;
 
 export const UploadImage = (props: dataEntryprops) => {
@@ -46,7 +47,9 @@ export const UploadImage = (props: dataEntryprops) => {
             
         </div>
             <input 
-                type='file' 
+                type='file'
+                name={props.id}
+                id={props.id} 
                 ref={fileInput}
                 required={props.isReq}
                 className={styles.input}
