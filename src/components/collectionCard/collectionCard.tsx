@@ -15,6 +15,7 @@ export const CollectionCard = (props: CollectionCardProps) => {
     return (
         <div>
             <div className={className}>
+            {props.children}
                 {/* <h1 className={styles.card__header}>
                     {props.collectionName}
                 </h1>
@@ -24,8 +25,7 @@ export const CollectionCard = (props: CollectionCardProps) => {
                     {props.description}
                 </p>
                 <div className={styles.card__cta}> */}
-                    {props.children}
-                {/* </div> */}
+
             </div>
         </div>
 
