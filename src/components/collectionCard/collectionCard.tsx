@@ -3,19 +3,19 @@ import styles from './collectionCard.module.sass';
 export type CollectionCardProps = Readonly<{
     children?: React.ReactNode,
     className?: string,
-    collectionName: string,
-    imageUrl?: string,
-    description?: string,
+    // collectionName: string,
+    // imageUrl?: string,
+    // description?: string,
 }>;
 
 
 export const CollectionCard = (props: CollectionCardProps) => {
-    let className = props.className ? `${styles.card} ${props.className}` : styles.card;
+    let className = props.className ? `${styles['card_wrapper']} ${props.className}` : styles['card_wrapper'];
 
     return (
-        <div className={className}>
-            <div className={styles['card_wrapper']}>
-                <h1 className={styles.card__header}>
+        <div>
+            <div className={className}>
+                {/* <h1 className={styles.card__header}>
                     {props.collectionName}
                 </h1>
                 <hr/>
@@ -23,9 +23,9 @@ export const CollectionCard = (props: CollectionCardProps) => {
                 <p className={styles.card__content}>
                     {props.description}
                 </p>
-                <div className={styles.card__cta}>
+                <div className={styles.card__cta}> */}
                     {props.children}
-                </div>
+                {/* </div> */}
             </div>
         </div>
 
