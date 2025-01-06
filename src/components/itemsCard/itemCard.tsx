@@ -17,6 +17,18 @@ export type ItemCardProps = Readonly<{
 export const ItemCard = (props: ItemCardProps) => {
     let className = props.className ? `${styles.itemCard__wrapper} ${props.className}` : styles.itemCard__wrapper;
 
+    // let itemBody = {
+    //     author: (props.hasAuthor) ? <p className={styles.nowrap}>
+    //                                     <strong>Author: </strong> 
+    //                                     {props.author}
+    //                                 </p> :
+    //                                  <></>,
+    //     series: (props.hasSeries) ? <p className={styles.nowrap}>
+    //                                     <strong>Series: </strong> 
+    //                                     {props.series}
+    //                                 </p> : 
+    //                                 <></>,
+    // }
     return (
         <div className='p-0 m-0' id={props.itemid}>
             <div className={className}>
