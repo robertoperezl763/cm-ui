@@ -4,7 +4,6 @@ import styles from './dialog.module.sass';
 import { Button } from '../button/button';
 import { IconTypes } from '../icon/icon';
 import { DialogProps, DialogHookReturnType  } from './dialogtypes';
-import clsx from 'clsx';
 
 
 
@@ -34,11 +33,13 @@ export const Dialog = (props: DialogProps) => {
         dialogRef.current.close()
     }, [props.isOpen]);
 
+    let className = props.className ? `${styles['dialog']} ${props.className}` : styles['dialog'];
+
     return (
         <dialog 
             ref = {dialogRef}
             onKeyDown={props.onKeyDown}
-            className={clsx(styles['dialog'])}
+            className={className}
         >
             <div className={styles['dialog__header']}>
                 <div className={styles['dialog__title']}>{props.title}</div>

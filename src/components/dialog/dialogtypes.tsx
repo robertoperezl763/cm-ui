@@ -3,8 +3,9 @@ export type DialogProps = Readonly<{
     isOpen?: boolean,
     onKeyDown?: React.KeyboardEventHandler,
     onClose?: React.EventHandler<any>,
-    title?: string
-    hasCloseBtn?: boolean
+    title?: string,
+    hasCloseBtn?: boolean,
+    className?: string,
 }>;
 
 export type DialogHookReturnType = [
