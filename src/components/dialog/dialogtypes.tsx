@@ -1,4 +1,4 @@
-export type DialogProps = Readonly<{
+export type DialogProps = {
     children?: React.ReactNode,
     isOpen?: boolean,
     onKeyDown?: React.KeyboardEventHandler,
@@ -6,7 +6,7 @@ export type DialogProps = Readonly<{
     title?: string,
     hasCloseBtn?: boolean,
     className?: string,
-}>;
+};
 
 export type DialogHookReturnType = [
     boolean,
