@@ -13,8 +13,8 @@ export const UploadImage = (props: dataEntryprops) => {
     const [selectedImage, setSelectedImage] = useState<string>();
     const fileInput: React.MutableRefObject<HTMLInputElement | null> = useRef(null)
     //  createRef<HTMLInputElement>();
-    console.log(props.id);
-    console.log(props.formId);
+    // console.log(props.id);
+    // console.log(props.formId);
 
     function handleClick() {
         if (fileInput.current) {
