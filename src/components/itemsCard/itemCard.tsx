@@ -15,7 +15,7 @@ export type ItemCardProps = Readonly<{
 
 
 export const ItemCard = (props: ItemCardProps) => {
-    let className = props.className ? `${styles.itemCard__wrapper} ${props.className}` : styles.itemCard__wrapper;
+    let className = props.className ? `${props.className} ${styles.itemCard__wrapper}` : styles.itemCard__wrapper;
 
     // let itemBody = {
     //     author: (props.hasAuthor) ? <p className={styles.nowrap}>
